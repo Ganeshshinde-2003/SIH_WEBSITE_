@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
+import { useAuth } from "../components/AuthContext";
 
 const Navbar = () => {
+  const { isLoggedIn } = useAuth();
+  console.log(isLoggedIn);
+
   return (
     <div className="nb-contanier">
       <div className="nb-logo">
@@ -14,7 +18,11 @@ const Navbar = () => {
         <Link to="/">Services</Link>
         <Link to="/">Contact Us</Link>
         <Link to="/">Search</Link>
-        <Link to="/">My Dashboard</Link>
+        {isLoggedIn ? (
+          <Link to="/">My DashBoard</Link>
+        ) : (
+          <Link to="/login">Login</Link>
+        )}
       </div>
     </div>
   );
