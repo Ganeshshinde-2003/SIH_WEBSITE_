@@ -348,4 +348,7 @@ a:hover::after {
   .nb-contanier {
     justify-content: space-around;
   }
+  .registration-form {
+    padding: 25px 45px;
+  }
 }
