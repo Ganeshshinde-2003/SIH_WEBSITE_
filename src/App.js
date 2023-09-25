@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import LoginForm from "./pages/auth/login";
 import { AuthProvider } from "./components/AuthContext";
 import RegisterForm from "./pages/auth/Register";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/login" element={<LoginForm />} />
           <Route path="/register" element={<RegisterForm />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </AuthProvider>
   );

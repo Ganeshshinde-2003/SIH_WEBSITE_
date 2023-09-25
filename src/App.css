@@ -41,11 +41,13 @@ a {
 a {
   position: relative;
   text-decoration: none;
-  color: #333; /* Default text color */
+  color: #333;
+  transition: all 0.2s;
 }
 
 a:hover {
-  color: #056b6b; /* Text color on hover */
+  color: #056b6b;
+  font-weight: bold;
 }
 
 a::after {
@@ -255,4 +257,95 @@ a:hover::after {
 }
 .sign-up {
   color: #1977cc;
+}
+.active-link {
+  font-weight: bold;
+  color: #107373;
+}
+
+.ft-container {
+  height: 300px;
+  width: 100%;
+  background-color: #056b6b;
+}
+
+.nb-icon {
+  display: none;
+}
+.mobile-view {
+  display: none;
+  flex-direction: column;
+  position: relative;
+}
+.mobile-nb {
+  width: 200px;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+  top: 65px;
+  right: 10px;
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 20px;
+}
+
+@media (max-width: 1000px) {
+  .nb-content {
+    display: none;
+  }
+  .mobile-view {
+    display: flex;
+  }
+  .nb-icon {
+    display: block;
+    font-size: 30px;
+    color: #056b6b;
+    cursor: pointer;
+  }
+}
+@media (max-width: 900px) {
+  .book-collection .bookcard {
+    flex: 0 0 calc(50% - 20px); /* Two cards per row with gap included */
+    /* Add other styles for .bookcard as in your original CSS */
+  }
+}
+@media (max-width: 640px) {
+  .book-collection .bookcard {
+    flex: 0 0 calc(100% - 0px); /* Two cards per row with gap included */
+    /* Add other styles for .bookcard as in your original CSS */
+  }
+  .home-filter-nv {
+    margin: 30px 10px;
+  }
+  .home-hero {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  .nb-contanier {
+    margin: 20px 0;
+  }
+  .slogan {
+    font-size: 25px;
+  }
+  .book-pic {
+    height: 150px;
+    bottom: -6%;
+  }
+}
+
+@media (max-width: 500px) {
+  .filter-chips {
+    flex-direction: column;
+  }
+  .dropdown-btn {
+    padding: 5px 40px;
+  }
+  .slogan span {
+    font-size: 39px;
+  }
+  .nb-contanier {
+    justify-content: space-around;
+  }
 }
