@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.nb-contanier {
+  margin: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nb-content {
+  display: flex;
+  gap: 30px;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
+}
+a:hover {
+  text-decoration: underline;
+  color: #1977cc;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.home-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #dbe9f1;
+  height: 450px;
+  padding: 40px;
+}
+.home-hero .logo-img {
+  height: 100%;
+}
+.slogan {
+  font-size: 30px;
+  color: #056b6b;
+}
+.slogan span {
+  font-size: 40px;
+  font-weight: 500;
+}
+.book-pic {
+  position: absolute;
+  height: 150px;
+  bottom: 0;
+  right: 0;
+}
