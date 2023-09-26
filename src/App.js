@@ -42,9 +42,6 @@ function App() {
           <Route path="/review-book" element={<PdfReview />} />
           <Route path="/reviewerdashboard" element={<ReviewerDashboard />} />
           <Route path="/view-my-reviews" element={<ViewMyReview />} />
-
-
-
         </Routes>
         <Footer />
         <ToastContainer />

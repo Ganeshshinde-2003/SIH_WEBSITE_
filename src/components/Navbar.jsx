@@ -87,8 +87,10 @@ const Navbar = () => {
           Publisher
         </Link>
         <Link
-          to="/search"
-          className={location.pathname === "/search" ? "active-link" : ""}
+          to="/reviewerdashboard"
+          className={
+            location.pathname === "/reviewerdashboard" ? "active-link" : ""
+          }
           onClick={showDashBoard}
         >
           Content Analyst
