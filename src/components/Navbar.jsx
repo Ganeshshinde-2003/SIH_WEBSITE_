@@ -98,7 +98,7 @@ const Navbar = () => {
           className={location.pathname === "/search" ? "active-link" : ""}
           onClick={showDashBoard}
         >
-          Transilator
+          Translator
         </Link>
       </div>
       <div className="mobile-view">
