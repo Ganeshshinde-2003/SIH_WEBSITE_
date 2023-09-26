@@ -19,6 +19,8 @@ import Search from "./pages/Search";
 import PdfReview from "./components/PdfReview";
 import ReviewerDashboard from "./pages/ReviewerDashboard";
 import ViewMyReview from "./components/ViewMyReview";
+import TranslaterDashboard from "./pages/TranslaterDashboard";
+import ViewMyTranslation from "./components/ViewMyTranslation";
 
 function App() {
   return (
@@ -39,8 +41,14 @@ function App() {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/search" element={<Search />} />
           <Route path="/review-book" element={<PdfReview />} />
+
           <Route path="/reviewerdashboard" element={<ReviewerDashboard />} />
           <Route path="/view-my-reviews" element={<ViewMyReview />} />
+
+          <Route path="/translatorsdashboard" element={<TranslaterDashboard />} />
+          <Route path="/my-translations" element={<ViewMyTranslation />} />
+          <Route path="/translation-book" element={<PdfReview />} />
+
         </Routes>
         <Footer />
         <ToastContainer />
