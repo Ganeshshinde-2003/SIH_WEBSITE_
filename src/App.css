@@ -938,7 +938,7 @@ a:not(.card-link):hover::after {
   position: sticky;
   top: 0;
   left: 0;
-  height: 80vh;
+  height: 85vh;
   width: 10%;
   background-color: #ffffff;
   color: #666666;
@@ -1019,7 +1019,7 @@ a:not(.card-link):hover::after {
     left: 0%;
     width: 40%;
     transition: 0.5s all ease;
-    min-height: 70vh;
+    height: 60vh;
   }
   .sidebar-in-out {
     display: inline;
