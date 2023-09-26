@@ -6,6 +6,7 @@ import LoginForm from "./pages/auth/login";
 import { AuthProvider } from "./components/AuthContext";
 import RegisterForm from "./pages/auth/Register";
 import Footer from "./components/Footer";
+import BookDetails from "./pages/BookDetails";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<LoginForm />} />
           <Route path="/register" element={<RegisterForm />} />
+          <Route path="/bookdetials/:id" element={<BookDetails />} />
         </Routes>
         <Footer />
       </BrowserRouter>
