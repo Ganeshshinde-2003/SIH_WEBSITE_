@@ -17,6 +17,7 @@ import ViewMyBooks from "./components/ViewMyBooks";
 import { ToastContainer } from "react-toastify";
 import AboutUs from "./pages/AboutUs";
 import Search from "./pages/Search";
+import PdfReview from "./components/PdfReview";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/bookdetials/:id" element={<BookDetails />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/review-book" element={<PdfReview />} />
         </Routes>
         <Footer />
         <ToastContainer />
