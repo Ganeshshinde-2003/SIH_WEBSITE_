@@ -27,8 +27,8 @@ const Navbar = () => {
           Home
         </Link>
         <Link
-          to="/about"
-          className={location.pathname === "/about" ? "active-link" : ""}
+          to="/aboutus"
+          className={location.pathname === "/aboutus" ? "active-link" : ""}
         >
           About
         </Link>
@@ -84,8 +84,8 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            to="/about"
-            className={location.pathname === "/about" ? "active-link" : ""}
+            to="/aboutus"
+            className={location.pathname === "/aboutus" ? "active-link" : ""}
             onClick={closeMobileMenu}
           >
             About
