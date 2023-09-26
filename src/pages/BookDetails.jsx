@@ -186,7 +186,7 @@ const BookDetails = () => {
                   Name <br /> <span>Anuradha Goyal</span>
                 </p>
                 <p>
-                  Qualification <br /> <span>M-Tech Author</span>
+                  Qualification <br /> <span>MBBS @Victoria</span>
                 </p>
 
                 <p>
@@ -272,7 +272,7 @@ const BookDetails = () => {
                   Name <br /> <span>Akhila Saroha</span>
                 </p>
                 <p>
-                  Qualification <br /> <span>B-Tech Author</span>
+                  Qualification <br /> <span>MBBS @AIIMS</span>
                 </p>
 
                 <p>
@@ -356,7 +356,7 @@ const BookDetails = () => {
                   Name <br /> <span>Vidhya Thakkar</span>
                 </p>
                 <p>
-                  Qualification <br /> <span>M-Tech Author</span>
+                  Qualification <br /> <span>MBBS @Christian</span>
                 </p>
 
                 <p>

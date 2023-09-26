@@ -39,8 +39,8 @@ const Navbar = () => {
           Services
         </Link>
         <Link
-          to="/contact"
-          className={location.pathname === "/contact" ? "active-link" : ""}
+          to="/contactus"
+          className={location.pathname === "/contactus" ? "active-link" : ""}
         >
           Contact Us
         </Link>
@@ -67,11 +67,11 @@ const Navbar = () => {
         )}
       </div>
       <div className="mobile-view">
-      {isMobileMenuOpen ? (
-        <FaTimes className="nb-icon" onClick={toggleMobileMenu} />
-      ) : (
-        <FaBars className="nb-icon" onClick={toggleMobileMenu} />
-      )}
+        {isMobileMenuOpen ? (
+          <FaTimes className="nb-icon" onClick={toggleMobileMenu} />
+        ) : (
+          <FaBars className="nb-icon" onClick={toggleMobileMenu} />
+        )}
         <div
           className={`nb-content mobile-nb`}
           style={{ display: isMobileMenuOpen ? "flex" : "none" }}
@@ -98,8 +98,8 @@ const Navbar = () => {
             Services
           </Link>
           <Link
-            to="/contact"
-            className={location.pathname === "/contact" ? "active-link" : ""}
+            to="/contactus"
+            className={location.pathname === "/contactus" ? "active-link" : ""}
             onClick={closeMobileMenu}
           >
             Contact Us

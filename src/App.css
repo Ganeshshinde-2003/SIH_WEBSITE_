@@ -22,10 +22,11 @@
 }
 
 .nb-contanier {
-  margin: 20px 40px;
+  padding: 20px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
 }
 .nb-content {
   display: flex;
@@ -672,4 +673,82 @@ a:not(.card-link):hover::after {
   .review-name span {
     display: none;
   }
+}
+
+.contactus-container {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.contactus-container p {
+  margin-bottom: 0;
+}
+.contactus-heading {
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: #107373;
+  font-weight: 600;
+}
+.contactus-fancy-line {
+  width: 50%;
+  color: rgb(91, 91, 91);
+  text-align: center;
+}
+.contactus-card {
+  padding: 0 100px;
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+}
+.contactus-card div {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  gap: 20px;
+}
+.contactus-card div:first-child {
+  justify-content: flex-end;
+}
+.contactus-card div.contactuscard-main {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  border: 1px solid #107373;
+  border-radius: 10px;
+}
+.contactus-card div.contactuscard-main .contactuscard-icon {
+  background-color: #107373;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-size: 40px;
+}
+.contactuscard-head {
+  font-size: 25px;
+  font-weight: 500;
+}
+.contactuscard-text {
+  font-size: 18px;
+  color: rgb(91, 91, 91);
+}
+@media (max-width: 1000px) {
+  .contactus-card {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 450px){
+  
 }
