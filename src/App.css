@@ -263,11 +263,6 @@ a:hover::after {
   color: #107373;
 }
 
-.ft-container {
-  height: 300px;
-  width: 100%;
-  background-color: #056b6b;
-}
 
 .nb-icon {
   display: none;
@@ -288,6 +283,81 @@ a:hover::after {
   background-color: white;
   padding: 20px 40px;
   border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.load-more-link{
+  cursor: pointer;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  background-color: #336699;
+  color: white;
+  padding: 30px 20px;
+}
+
+.footer-icon{
+  font-size: 40px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.qr-img{
+  height: 150px;
+  margin-bottom: 8px;
+}
+
+.footer-text-l {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.qr-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-mid-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text-m{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .social-links {
+    margin-bottom: 20px;
+  }
+
+  .footer-icon {
+    font-size: 30px;
+    margin: 0 10px;
+  }
+  .qr-div {
+    display: none;
+  }
+  .footer-text-l {
+    display: none;
+  }
+  .footer-text-m{
+    display: block;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -300,7 +370,6 @@ a:hover::after {
   .nb-icon {
     display: block;
     font-size: 30px;
-    color: #056b6b;
     cursor: pointer;
   }
 }
@@ -337,7 +406,7 @@ a:hover::after {
 
 @media (max-width: 500px) {
   .filter-chips {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   .dropdown-btn {
     padding: 5px 40px;
