@@ -20,7 +20,9 @@ const PdfReview = () => {
         </div>
         <div>
           <img src={book1} alt="alt" />
-          <Link to="/">Start Reviewing</Link>
+          <Link to="http://localhost:3001/custom-image-stamp">
+            Start Reviewing
+          </Link>
         </div>
       </div>
     </div>
