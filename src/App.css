@@ -336,6 +336,65 @@ a:not(.card-link):hover::after {
   display: none;
 }
 
+.testimony-card{
+  height: auto;
+  width: 500px;
+  background-color: #dbe9f1;
+  margin: 0 20px;
+  border-radius:20px;
+}
+.testimony-container{
+width: 580px;
+}
+.card .testimony-img{
+  height: 120px;
+  width: auto;
+}
+.services-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.services-heading h1{
+  text-align: center;
+  color: #107373;
+  font-weight: 600;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+.services-heading p{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 0 300px;
+  font-weight: 400;
+  color: gray;
+  font-style: italic;
+}
+.services-stats-card-value{
+  font-size: 40px;
+  font-weight: 600;
+  color: #107373;
+}
+.services-stats-card-container{
+  border: 1px solid #107373;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 20px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.awards-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
@@ -422,6 +481,22 @@ a:not(.card-link):hover::after {
   }
   .registration-form {
     padding: 25px 15px;
+  }
+  .testimony-card{
+    width: 80vw;
+  }
+  .testimony-container{
+    width: 100vw;
+  }
+  .services-heading p{
+    padding: 0 20px;
+  }
+  .services-stats-card-container {
+    padding: 5px 20px;
+  }
+  .services-stats-card-value {
+    font-size: 30px;
+    margin-top: 1rem;
   }
 }
 
