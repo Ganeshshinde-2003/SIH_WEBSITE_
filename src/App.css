@@ -336,34 +336,40 @@ a:not(.card-link):hover::after {
   display: none;
 }
 
-.testimony-card{
+.testimony-card {
   height: auto;
   width: 500px;
   background-color: #dbe9f1;
   margin: 0 20px;
-  border-radius:20px;
+  border-radius: 20px;
 }
-.testimony-container{
-width: 580px;
+.testimony-container {
+  width: 580px;
 }
-.card .testimony-img{
+.card .testimony-img {
   height: 120px;
   width: auto;
 }
-.services-main{
+.services-container {
+  margin: 40px 0;
+}
+.services-main {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
 }
-.services-heading h1{
+.services-heading {
+  width: 100%;
+}
+.services-heading h1 {
   text-align: center;
   color: #107373;
   font-weight: 600;
   font-size: 50px;
   letter-spacing: 2px;
 }
-.services-heading p{
+.services-heading p {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -372,12 +378,12 @@ width: 580px;
   color: gray;
   font-style: italic;
 }
-.services-stats-card-value{
+.services-stats-card-value {
   font-size: 40px;
   font-weight: 600;
   color: #107373;
 }
-.services-stats-card-container{
+.services-stats-card-container {
   border: 1px solid #107373;
   border-radius: 10px;
   width: fit-content;
@@ -387,7 +393,7 @@ width: 580px;
   align-items: center;
   justify-content: center;
 }
-.awards-container{
+.awards-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -455,7 +461,7 @@ width: 580px;
     padding: 10px;
   }
   .nb-contanier {
-    margin: 20px 0;
+    margin-bottom: 20px;
   }
   .slogan {
     font-size: 25px;
@@ -482,17 +488,18 @@ width: 580px;
   .registration-form {
     padding: 25px 15px;
   }
-  .testimony-card{
+  .testimony-card {
     width: 80vw;
   }
-  .testimony-container{
+  .testimony-container {
     width: 100vw;
   }
-  .services-heading p{
+  .services-heading p {
     padding: 0 20px;
+    font-size: 13px;
   }
   .services-stats-card-container {
-    padding: 5px 20px;
+    padding: 5px 0px;
   }
   .services-stats-card-value {
     font-size: 30px;
@@ -870,6 +877,16 @@ width: 580px;
   }
 }
 @media (max-width: 500px) {
+  .services-heading h1 {
+    font-size: 42px;
+    letter-spacing: 0;
+  }
+  .awards-container {
+    padding: 0 30px;
+  }
+  .awards-container .services-stats-card-container {
+    width: 100%;
+  }
   .contactus-card {
     padding: 0 10px;
   }

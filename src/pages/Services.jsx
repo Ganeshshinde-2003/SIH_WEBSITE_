@@ -57,7 +57,7 @@ export const Services = () => {
     }, []);
   
   return (
-    <div>
+    <div className="services-container">
       <div className="services-heading">
         <h1>Our Services</h1>
         <p>
