@@ -4,8 +4,7 @@ import { FaFileUpload, FaHome, FaClipboardList } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Sidebar() {
-
-  const [activeItem, setActiveItem] = useState('dashboard');
+  const [setActiveItem] = useState("dashboard");
 
   return (
     <div id="sidebar">
@@ -14,9 +13,8 @@ function Sidebar() {
           <FaHome size={20} />
         </span>
         <Link to="/publisherdashboard">
-          <span onClick={() => setActiveItem('dashboard')} >Dashboard</span>
-          </Link>
-
+          <span onClick={() => setActiveItem("dashboard")}>Dashboard</span>
+        </Link>
       </div>
       <hr />
       <div>
@@ -24,9 +22,8 @@ function Sidebar() {
           <FaClipboardList size={20} />
         </span>
         <Link to="/view-my-books">
-          <span onClick={() => setActiveItem('viewbooks')}>View My Books</span>
-          </Link>
-
+          <span onClick={() => setActiveItem("viewbooks")}>View My Books</span>
+        </Link>
       </div>
       <hr />
       <div>
@@ -34,9 +31,10 @@ function Sidebar() {
           <FaFileUpload size={20} />
         </span>
         <Link to="/publish-book">
-          <span onClick={() => setActiveItem('publishbook')}>Publish a Book</span>
-          </Link>
-
+          <span onClick={() => setActiveItem("publishbook")}>
+            Publish a Book
+          </span>
+        </Link>
       </div>
       <hr />
       <div>
@@ -44,15 +42,14 @@ function Sidebar() {
           <IoIosNotifications size={20} />
         </span>
         <Link to="/notification">
-          <span onClick={() => setActiveItem('notification')}>Notification</span>
-          </Link>
+          <span onClick={() => setActiveItem("notification")}>
+            Notification
+          </span>
+        </Link>
       </div>
       <hr />
     </div>
-
-    
   );
 }
 
 export default Sidebar;
-

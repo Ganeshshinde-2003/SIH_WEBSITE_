@@ -19,7 +19,7 @@ function RegisterForm() {
   };
 
   return (
-    <div className="registration-container">
+    <div className="registration-container" style={{ height: "90vh" }}>
       <div className="registration-form">
         <h2>Registration Form</h2>
         <form>
