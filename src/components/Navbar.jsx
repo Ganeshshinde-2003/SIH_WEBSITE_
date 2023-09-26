@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../App.css";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { useAuth } from "../components/AuthContext";
 
 const Navbar = () => {
@@ -67,7 +67,11 @@ const Navbar = () => {
         )}
       </div>
       <div className="mobile-view">
+      {isMobileMenuOpen ? (
+        <FaTimes className="nb-icon" onClick={toggleMobileMenu} />
+      ) : (
         <FaBars className="nb-icon" onClick={toggleMobileMenu} />
+      )}
         <div
           className={`nb-content mobile-nb`}
           style={{ display: isMobileMenuOpen ? "flex" : "none" }}

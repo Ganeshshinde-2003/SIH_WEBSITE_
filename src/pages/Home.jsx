@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 import Books from "../assets/books.png";
 import BookCard from "../components/BookCard";
@@ -79,6 +79,11 @@ const listOne = [
 ];
 
 const Home = () => {
+  const [numBooksToShow, setNumBooksToShow] = useState(6);
+
+  const loadMoreBooks = () => {
+    setNumBooksToShow(numBooksToShow + 6);
+  };
   return (
     <div className="home">
       <div className="home-hero">
@@ -93,7 +98,7 @@ const Home = () => {
         <img src={Books} alt="logo-slogna" className="book-pic" />
       </div>
       <div className="home-filter-nv">
-        <div className="filter-chips">
+        <div className="filter-chips mobile-scrollable">
           <div className="dropdown">
             <button
               className="btn btn-secondary dropdown-toggle dropdown-btn"
@@ -160,17 +165,17 @@ const Home = () => {
             <ul className="dropdown-menu">
               <li>
                 <button className="dropdown-item" type="button">
-                  Reviewed
+                🟢 Reviewed
                 </button>
               </li>
               <li>
                 <button className="dropdown-item" type="button">
-                  In Process
+                  🟡 In Process
                 </button>
               </li>
               <li>
                 <button className="dropdown-item" type="button">
-                  Not Reviewed
+                🔴 Not Reviewed
                 </button>
               </li>
             </ul>
@@ -178,10 +183,16 @@ const Home = () => {
           <div className="total-book">120+ Books</div>
         </div>
         <div className="book-collection">
-          {listOne.map((book) => (
-            <BookCard img={book.img} name={book.name} disc={book.disc} />
-          ))}
+        {listOne.slice(0, numBooksToShow).map((book, index) => (
+          <BookCard key={index} img={book.img} name={book.name} disc={book.disc} />
+        ))}
+      </div>
+      {numBooksToShow < listOne.length && (
+        <div className="load-more-button">
+          <a className="load-more-link" onClick={loadMoreBooks}>Load More...</a>
         </div>
+      )}
+
       </div>
     </div>
   );
