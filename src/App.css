@@ -22,6 +22,7 @@
 }
 
 .nb-contanier {
+  position: relative;
   padding: 20px 40px;
   display: flex;
   align-items: center;
@@ -1152,7 +1153,7 @@ a:not(.card-link):hover::after {
   }
 }
 .pdf-container {
-  margin-top: 50px;
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1160,5 +1161,52 @@ a:not(.card-link):hover::after {
 .pdf-heading {
   font-size: 50px;
   font-weight: 600;
+  color: #107373;
+}
+.pdf-content {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
+}
+.pdf-content div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.pdf-content div:last-child a {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  background-color: #107373;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+@media (max-width: 600px) {
+  .pdf-content {
+    flex-direction: column;
+  }
+}
+.nb-dropdown {
+  z-index: 100;
+  position: absolute;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 20px 20px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  top: 100px;
+  right: 10px;
+  display: none;
+}
+.nb-dropdown a {
+  font-size: 20px;
+}
+.nb-dropdown p {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
   color: #107373;
 }
