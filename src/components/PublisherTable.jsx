@@ -1,13 +1,13 @@
 import React from "react";
 import PublisherData from "../Data/PublisherData.json";
 import Image1 from "../assets/book12.jpg";
-import { Link } from "react-router-dom";
+import { FaShareSquare } from "react-icons/fa";
 
 const Table = () => {
   return (
-    <div className="container my-4">
+    <div className="container my-4 dashboard-table-container">
       <table className="table table-responsive-md table-bordered">
-        <thead className="bg-gray-700 text-white">
+        <thead className="bg-gray-700 text-white text-center">
           <tr>
             <th>Submission ID</th>
             <th>Book Title</th>
@@ -45,13 +45,7 @@ const Table = () => {
               <td>{publisherData.ReviewStatus}</td>
               <td>{publisherData.ReviewRating}</td>
               <td>
-                <Link
-                  className="btn btn-success btn-sm"
-                  to={`bookid/details/`}
-                  style={{backgroundColor:'#107373'}}
-                >
-                    Details
-                </Link>
+                <FaShareSquare />
               </td>
             </tr>
           ))}
