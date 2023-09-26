@@ -19,7 +19,6 @@ import Search from "./pages/Search";
 import PdfReview from "./components/PdfReview";
 import ReviewerDashboard from "./pages/ReviewerDashboard";
 import ViewMyReview from "./components/ViewMyReview";
-import SubmitBook from "./components/SubmitBook";
 
 function App() {
   return (

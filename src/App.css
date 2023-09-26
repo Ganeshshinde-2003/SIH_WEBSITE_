@@ -954,7 +954,6 @@ a:not(.card-link):hover::after {
   position: relative;
 }
 
-
 #sidebar span svg {
   font-size: 20px;
   margin-right: 8px;
@@ -1209,4 +1208,9 @@ a:not(.card-link):hover::after {
   font-weight: 700;
   margin-bottom: 0;
   color: #107373;
+}
+.pdf-danger {
+  color: rgb(180, 0, 0);
+  font-size: 15px;
+  font-weight: 500;
 }
