@@ -631,4 +631,25 @@ a:not(.card-link):hover::after {
   .book-review-plus-icon3 {
     font-size: 30px;
   }
+  .review {
+    padding: 20px 10px;
+  }
+  .review-dates p {
+    padding: 10px 10px;
+  }
+  .review-ratings {
+    flex-direction: column;
+  }
+  .review-ratings div {
+    width: 100%;
+  }
+  .reviewer-details p,
+  .reviewer-comment p,
+  .reviewer-comment p:last-child,
+  .ratings p {
+    font-size: 17px;
+  }
+  .reviewer-details span {
+    font-size: 20px;
+  }
 }
