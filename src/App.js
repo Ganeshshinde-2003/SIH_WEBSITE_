@@ -6,6 +6,10 @@ import LoginForm from "./pages/auth/login";
 import { AuthProvider } from "./components/AuthContext";
 import RegisterForm from "./pages/auth/Register";
 import Footer from "./components/Footer";
+import { Services } from "./pages/Services";
+import BookDetails from "./pages/BookDetails";
+import Contactus from "./pages/Contactus";
+
 import PublisherDashboard from "./pages/PublisherDashboard";
 import BookUploadForm from "./components/BookUploadForm";
 import NotificationPage from "./components/Notification";
@@ -25,6 +29,9 @@ function App() {
           <Route path="/publish-book" element={<BookUploadForm /> } />
           <Route path="/view-my-books" element={<ViewMyBooks />} />
           <Route path="/notification" element={<NotificationPage /> } />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contactus" element={<Contactus />} />
+          <Route path="/bookdetials/:id" element={<BookDetails />} />
         </Routes>
         <Footer />
         <ToastContainer />

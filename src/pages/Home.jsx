@@ -187,6 +187,7 @@ const Home = () => {
           {listOne.slice(0, numBooksToShow).map((book, index) => (
             <BookCard
               key={index}
+              index={index}
               img={book.img}
               name={book.name}
               disc={book.disc}
