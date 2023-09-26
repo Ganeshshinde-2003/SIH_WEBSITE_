@@ -8,6 +8,7 @@ const Navbar = () => {
   const { isLoggedIn } = useAuth();
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [dashboard, setDashboard] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -15,6 +16,12 @@ const Navbar = () => {
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
+    showDashBoard();
+  };
+
+  const showDashBoard = () => {
+    setDashboard(!dashboard);
+    toggleMobileMenu();
   };
 
   return (
@@ -52,10 +59,10 @@ const Navbar = () => {
         </Link>
         {isLoggedIn ? (
           <Link
-            to="/dashboard"
             className={location.pathname === "/dashboard" ? "active-link" : ""}
+            onClick={showDashBoard}
           >
-            My Dashboard
+            Dashboard
           </Link>
         ) : (
           <Link
@@ -65,6 +72,35 @@ const Navbar = () => {
             Login
           </Link>
         )}
+      </div>
+      <div
+        className="nb-dropdown"
+        style={{ display: dashboard ? "flex" : "none" }}
+      >
+        <p>For Testing Only</p>
+        <Link
+          to="/publisherdashboard"
+          className={
+            location.pathname === "/publisherdashboard" ? "active-link" : ""
+          }
+          onClick={closeMobileMenu}
+        >
+          Publisher
+        </Link>
+        <Link
+          to="/search"
+          className={location.pathname === "/search" ? "active-link" : ""}
+          onClick={closeMobileMenu}
+        >
+          Content Analyst
+        </Link>
+        <Link
+          to="/search"
+          className={location.pathname === "/search" ? "active-link" : ""}
+          onClick={closeMobileMenu}
+        >
+          Transilator
+        </Link>
       </div>
       <div className="mobile-view">
         {isMobileMenuOpen ? (
@@ -113,13 +149,12 @@ const Navbar = () => {
           </Link>
           {isLoggedIn ? (
             <Link
-              to="/dashboard"
               className={
                 location.pathname === "/dashboard" ? "active-link" : ""
               }
-              onClick={closeMobileMenu}
+              onClick={showDashBoard}
             >
-              My Dashboard
+              Dashboard
             </Link>
           ) : (
             <Link

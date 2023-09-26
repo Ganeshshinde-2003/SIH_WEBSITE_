@@ -22,6 +22,7 @@
 }
 
 .nb-contanier {
+  position: relative;
   padding: 20px 40px;
   display: flex;
   align-items: center;
@@ -1185,4 +1186,26 @@ a:not(.card-link):hover::after {
   .pdf-content {
     flex-direction: column;
   }
+}
+.nb-dropdown {
+  z-index: 100;
+  position: absolute;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 20px 20px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  top: 100px;
+  right: 10px;
+  display: none;
+}
+.nb-dropdown a {
+  font-size: 20px;
+}
+.nb-dropdown p {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #107373;
 }
