@@ -997,3 +997,69 @@ a:not(.card-link):hover::after {
   font-weight: 600;
   color: #48bb78;
 }
+
+.aboutus-container {
+  margin: 40px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.aboutus-heading {
+  font-size: 50px;
+  color: #107373;
+  font-weight: 600;
+}
+.aboutus-section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 20px;
+}
+.aboutus-que {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.aboutus-icon {
+  font-size: 12px;
+}
+.aboutus-section img {
+  width: 100%;
+  height: auto;
+}
+.aboutus-flow {
+  text-align: center;
+  color: #107373;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.aboutus-ans span {
+  font-weight: 600;
+}
+@media (max-width: 800px) {
+  .aboutus-container {
+    margin: 40px 0;
+  }
+}
+@media (max-width: 400px) {
+  .aboutus-section {
+    width: 90%;
+  }
+  .aboutus-que {
+    font-size: 18px;
+  }
+  .aboutus-ans {
+    font-size: 13px;
+  }
+  .aboutus-flow {
+    font-size: 22px;
+  }
+  .aboutus-icon {
+    font-size: 8px;
+  }
+}

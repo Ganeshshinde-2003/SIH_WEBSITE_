@@ -15,6 +15,7 @@ import BookUploadForm from "./components/BookUploadForm";
 import NotificationPage from "./components/Notification";
 import ViewMyBooks from "./components/ViewMyBooks";
 import { ToastContainer } from "react-toastify";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
@@ -25,13 +26,14 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<LoginForm />} />
           <Route path="/register" element={<RegisterForm />} />
-          <Route path="/publisherdashboard" element={<PublisherDashboard /> } />
-          <Route path="/publish-book" element={<BookUploadForm /> } />
+          <Route path="/publisherdashboard" element={<PublisherDashboard />} />
+          <Route path="/publish-book" element={<BookUploadForm />} />
           <Route path="/view-my-books" element={<ViewMyBooks />} />
-          <Route path="/notification" element={<NotificationPage /> } />
+          <Route path="/notification" element={<NotificationPage />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contactus" element={<Contactus />} />
           <Route path="/bookdetials/:id" element={<BookDetails />} />
+          <Route path="/aboutus" element={<AboutUs />} />
         </Routes>
         <Footer />
         <ToastContainer />

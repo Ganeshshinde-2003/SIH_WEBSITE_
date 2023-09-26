@@ -12,10 +12,8 @@ function RegisterForm() {
   const navigate = useNavigate(); // Initialize useHistory
 
   const handleLogin = () => {
-    // Perform your login logic here
-    // Assuming a successful login, set the login status and redirect to the home page
     login();
-    navigate("/"); // Redirect to the home page
+    navigate("/");
   };
 
   return (
