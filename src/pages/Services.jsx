@@ -1,4 +1,4 @@
-import React,{ useState, useEffect }  from "react";
+import React, { useState, useEffect } from "react";
 import { TestimonyCard } from "../components/TestimonyCard";
 import test1 from "../assets/testi1.webp";
 import test2 from "../assets/test2.webp";
@@ -42,20 +42,20 @@ const listOne = [
 ];
 
 export const Services = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-    useEffect(() => {
-      const intervalId = setInterval(() => {
-        // Increment the currentIndex to change the carousel item
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % listOne.length);
-      }, 2000); // Change every 2 seconds (2000 milliseconds)
-  
-      return () => {
-        // Clean up the interval when the component unmounts
-        clearInterval(intervalId);
-      };
-    }, []);
-  
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      // Increment the currentIndex to change the carousel item
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % listOne.length);
+    }, 2000); // Change every 2 seconds (2000 milliseconds)
+
+    return () => {
+      // Clean up the interval when the component unmounts
+      clearInterval(intervalId);
+    };
+  }, []);
+
   return (
     <div className="services-container">
       <div className="services-heading">
@@ -72,27 +72,28 @@ export const Services = () => {
         <ServicesStatsCard value="100+" param="Verified Books" />
         <ServicesStatsCard value="15+" param="Publishers" />
       </div>
-      <div className="test-heading"></div>
+
+      <div className="test-heading">Testimonials</div>
       <div className="services-main">
-      <div className="testimony-container">
-      <Carousel
-        cols={1}
-        rows={1}
-        gap={0}
-        loop
-        value={currentIndex} // Set the current index to control the carousel
-      >
-        {listOne.map((book, index) => (
-          <Carousel.Item key={index}>
-            <TestimonyCard
-              img={book.img}
-              name={book.name}
-              disc={book.disc}
-            />
-          </Carousel.Item>
-        ))}
-      </Carousel>
-    </div>
+        <div className="testimony-container">
+          <Carousel
+            cols={1}
+            rows={1}
+            gap={0}
+            loop
+            value={currentIndex} // Set the current index to control the carousel
+          >
+            {listOne.map((book, index) => (
+              <Carousel.Item key={index}>
+                <TestimonyCard
+                  img={book.img}
+                  name={book.name}
+                  disc={book.disc}
+                />
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </div>
       </div>
     </div>
   );

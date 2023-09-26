@@ -468,7 +468,14 @@ a:not(.card-link):hover::after {
     bottom: -6%;
   }
 }
-
+.test-heading {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  color: #107373;
+  font-weight: 600;
+}
 @media (max-width: 500px) {
   .filter-chips {
     flex-wrap: wrap;
