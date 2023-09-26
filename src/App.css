@@ -460,9 +460,6 @@ a:not(.card-link):hover::after {
     height: auto;
     padding: 10px;
   }
-  .nb-contanier {
-    margin-bottom: 20px;
-  }
   .slogan {
     font-size: 25px;
   }
