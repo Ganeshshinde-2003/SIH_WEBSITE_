@@ -1063,3 +1063,36 @@ a:not(.card-link):hover::after {
     font-size: 8px;
   }
 }
+
+.search-container {
+  margin-top: 50px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-heading {
+  font-size: 50px;
+  font-weight: 600;
+  color: #107373;
+}
+.search-section {
+  width: 70%;
+  background-color: #dbe9f1;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.search-icon {
+  font-size: 30px;
+  color: #107373;
+}
+@media (max-width: 400px) {
+  .search-section {
+    width: 90%;
+  }
+  .search-heading {
+    font-size: 40px;
+  }
+}
