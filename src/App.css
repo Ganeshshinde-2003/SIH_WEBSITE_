@@ -744,11 +744,94 @@ a:not(.card-link):hover::after {
   font-size: 18px;
   color: rgb(91, 91, 91);
 }
+.contactus-form {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  justify-content: center;
+  padding: 0 145px;
+}
+.contactus-form div {
+  background-color: #dbe9f1;
+  width: 50%;
+}
+.contactus-form-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactus-form-fields {
+  padding: 20px;
+}
+.contactus-form-fields .registration-input {
+  margin: 20px 0;
+}
 @media (max-width: 1000px) {
   .contactus-card {
     padding: 0 10px;
   }
 }
-@media (max-width: 450px){
-  
+@media (max-width: 900px) {
+  .contactus-card {
+    flex-direction: column;
+    padding: 0 100px;
+  }
+  .contactus-card div:first-child {
+    width: 100%;
+    justify-content: center;
+  }
+  .contactus-card div:last-child {
+    width: 100%;
+    justify-content: center;
+  }
+  .contactus-form {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 800px) {
+  .contactus-card {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 500px) {
+  .contactus-card {
+    padding: 0 10px;
+  }
+  .contactuscard-head {
+    font-size: 17px;
+  }
+  .contactuscard-text {
+    font-size: 13px;
+    text-align: center;
+  }
+  .contactus-card div.contactuscard-main {
+    padding: 20px 0;
+    align-items: center;
+    gap: 10px;
+  }
+  .contactus-card div.contactuscard-main .contactuscard-icon {
+    height: 75px;
+    width: 75px;
+  }
+  .contactus-fancy-line {
+    width: 90%;
+  }
+  .contactus-heading {
+    letter-spacing: 0;
+  }
+  .contactus-form-img {
+    display: none;
+  }
+  .contactus-form div {
+    width: 100%;
+  }
+  .contactus-form {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 350px) {
+  .media-query-div div:first-child {
+    padding: 10px 0;
+  }
 }

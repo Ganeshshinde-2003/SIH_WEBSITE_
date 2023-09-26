@@ -15,7 +15,7 @@ const Contactus = () => {
         </i>
       </p>
       <div className="contactus-card">
-        <div>
+        <div className="media-query-div">
           <ContactusCard
             icon={<FaMapSigns />}
             head="Address"
@@ -23,7 +23,7 @@ const Contactus = () => {
           />
           <ContactusCard
             icon={<IoMdCall />}
-            head="Contact Number"
+            head="Contact No"
             text="+123 4567 890"
           />
         </div>
@@ -38,6 +38,33 @@ const Contactus = () => {
             head="Website"
             text="ayush.com"
           />
+        </div>
+      </div>
+      <div className="contactus-form">
+        <div className="contactus-form-img">
+          <img
+            src="https://ayush.gov.in/images/Fbanner/frontpage2.png"
+            alt="alt"
+          />
+        </div>
+        <div className="contactus-form-fields">
+          <form>
+            <input
+              className="registration-input"
+              type="email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              className="registration-input"
+              rows={10}
+              required
+              placeholder="Messege"
+            />
+            <button className="registration-button" type="button">
+              SEND MESSAGE
+            </button>
+          </form>
         </div>
       </div>
     </div>
