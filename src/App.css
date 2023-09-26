@@ -926,8 +926,7 @@ a:not(.card-link):hover::after {
     padding: 10px 0;
   }
 }
-@media (max-width: 450px) {
-}
+
 /*Sidebar style*/
 #sidebar {
   box-shadow: 1px 1px 8px 0.2px #aaaaaa;
@@ -964,9 +963,8 @@ a:not(.card-link):hover::after {
 .Overviewcard {
   width: 275px;
   height: 150px;
-  border: 1px solid #ccc;
+  border: 1px solid #107373;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 16px;
   margin: 16px;
   display: flex;
@@ -997,3 +995,60 @@ a:not(.card-link):hover::after {
   font-weight: 600;
   color: #48bb78;
 }
+.sidebar-parent{
+  position: relative;
+}
+
+.sidebar-in-out {
+display: none;
+
+}
+.publisher-cards-container {
+  display: flex;
+}
+
+
+@media (max-width: 500px) {
+  #sidebar{
+    position: absolute;
+    top: 120px;
+    left: 0%;
+    width: 40%;
+    transition: 0.5s all ease;
+    min-height: 70vh;
+  }
+  .sidebar-in-out {
+    display: inline;
+    font-size: 30px;
+    position: absolute;
+    top: 5px;
+    right: -30px;
+    
+  }
+  .Overviewcard{
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+  }
+  .Overviewcard-title {
+    font-size: 12px;
+
+  }
+  .Overviewcard-text{
+    font-size: 18px;
+  }
+  .Overviewcard-icon{
+    font-size: 20px;
+  }
+  .publisher-cards-container {
+    width: 100vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .dashboard-table-container {
+    width: 100vw;
+    overflow-x: scroll;
+  }
+  
+} 

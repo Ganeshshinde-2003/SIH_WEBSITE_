@@ -12,7 +12,7 @@ const PublisherDashboard = ()=> {
     <div style={{display:'flex'}}>
       <Sidebar />
       <div>
-      <div style={{display:'flex'}}>
+      <div className="publisher-cards-container">
       <Card
         icon= {<FaFileUpload />}
         title="Total books uploaded"
@@ -22,7 +22,7 @@ const PublisherDashboard = ()=> {
         icon={<GrInProgress />}
         title="Currently in Review"
         content="3"
-        contentColor="yellow"
+        contentColor="#FFBF00"
       />
       <Card
         icon={<BsFillBookmarkCheckFill />}
