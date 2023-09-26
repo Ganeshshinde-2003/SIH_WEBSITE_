@@ -32,7 +32,7 @@ const Table = () => {
               <td>{publisherData.Tags}</td>
               <td>
                 <img
-                  // src={`../assets/${publisherData.coverImage}`}
+                  // src={''}
                   src={Image1}
                   width={40}
                   height={50}
