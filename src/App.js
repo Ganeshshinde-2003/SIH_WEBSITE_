@@ -49,13 +49,6 @@ function App() {
           <Route path="/my-translations" element={<ViewMyTranslation />} />
           <Route path="/translation-book" element={<PdfReview />} />
 
-
-
-
-
-
-
-
         </Routes>
         <Footer />
         <ToastContainer />
