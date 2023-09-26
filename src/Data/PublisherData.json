@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "SubmissionID": "SUB-001",
+      "BookTitle": "Book 1",
+      "Author": "Author 1",
+      "Tags": "Tag1, Tag2",
+      "coverImage":"book1.jpg",
+      "ExpectedReviewDate": "2023-09-30",
+      "Actions": "Action 1",
+      "ReviewStatus": "🟡 In-Review",
+      "ReviewRating": 0,
+      "Comments": "No comments yet"
+    },
+    {
+      "id": 2,
+      "SubmissionID": "SUB-002",
+      "BookTitle": "Title",
+      "Author": "Author 2",
+      "Tags": "Tag3, Tag4",
+      "coverImage": "book10.jpg",
+      "ExpectedReviewDate": "2023-10-05",
+      "Actions": "Action 2",
+      "ReviewStatus": "🟢 Approved",
+      "ReviewRating": 4.5,
+      "Comments": "Great work!"
+    }, 
+    {
+        "id": 3,
+        "SubmissionID": "SUB-002",
+        "BookTitle": "Book 2",
+        "Author": "Author 2",
+        "Tags": "Tag3, Tag4",
+        "coverImage": "book12.jpg",
+        "ExpectedReviewDate": "2023-10-05",
+        "Actions": "Action 2",
+        "ReviewStatus": "🟢 Approved",
+        "ReviewRating": 4.5,
+        "Comments": "Great work!"
+      },
+      {
+        "id": 4,
+        "SubmissionID": "SUB-002",
+        "BookTitle": "Book 2",
+        "Author": "Author 2",
+        "Tags": "Tag3, Tag4",
+        "coverImage": "book8.jpg",
+        "ExpectedReviewDate": "2023-10-05",
+        "Actions": "Action 2",
+        "ReviewStatus": "🔴 Rejecterd",
+        "ReviewRating": 4.5,
+        "Comments": "Great work!"
+      } 
+
+  ]
+  
