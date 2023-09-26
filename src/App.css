@@ -1151,7 +1151,7 @@ a:not(.card-link):hover::after {
   }
 }
 .pdf-container {
-  margin-top: 50px;
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1160,4 +1160,29 @@ a:not(.card-link):hover::after {
   font-size: 50px;
   font-weight: 600;
   color: #107373;
+}
+.pdf-content {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
+}
+.pdf-content div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.pdf-content div:last-child a {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  background-color: #107373;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+@media (max-width: 600px) {
+  .pdf-content {
+    flex-direction: column;
+  }
 }

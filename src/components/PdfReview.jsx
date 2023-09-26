@@ -12,15 +12,15 @@ const PdfReview = () => {
             Name <br /> <span>Anuradha Goyal</span>
           </p>
           <p>
-            Qualification <br /> <span>MBBS @Victoria</span>
+            Book Name <br /> <span>Anatomy For Students</span>
           </p>
-
           <p>
-            Affiliation <br /> <span>No 1 author of 2002. by AIIMS Delhi</span>
+            Deadline to review <br /> <span>07-10-2023</span>
           </p>
         </div>
         <div>
           <img src={book1} alt="alt" />
+          <Link to="/">Start Reviewing</Link>
         </div>
       </div>
     </div>
