@@ -426,9 +426,10 @@ a:not(.card-link):hover::after {
 
 .book-details-card {
   margin-bottom: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
   background-color: #107373;
   height: 85vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -575,12 +576,22 @@ a:not(.card-link):hover::after {
   font-size: 40px;
 }
 .book-details-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 40px;
   color: #107373;
   font-weight: 500;
   margin-left: 40px;
 }
-
+.book-details-heading span {
+  font-size: 30px;
+  color: rgb(158, 158, 158);
+}
+.review-name span {
+  font-size: 20px;
+  color: rgb(91, 91, 91);
+}
 @media (max-width: 800px) {
   .book-details-card img {
     height: 400px;
@@ -621,7 +632,11 @@ a:not(.card-link):hover::after {
     display: none;
   }
   .book-details-heading {
-    font-size: 30px;
+    font-size: 25px;
+    margin-left: 15px;
+  }
+  .book-details-heading span {
+    font-size: 15px;
   }
   .review-name {
     font-size: 20px;
@@ -651,5 +666,10 @@ a:not(.card-link):hover::after {
   }
   .reviewer-details span {
     font-size: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .review-name span {
+    display: none;
   }
 }

@@ -150,11 +150,22 @@ const BookDetails = () => {
           </span>
         </div>
       </div>
-      <p className="book-details-heading">Reviews</p>
+      <p className="book-details-heading">
+        Curated by{" "}
+        <span>
+          <FaStar />
+          <FaStar />
+          <FaStar />
+          <FaStar />
+          <FaStarHalfAlt />
+        </span>
+      </p>
       <div className="book-details-review">
         <div className="review">
           <div className="review-name" onClick={handleReviewDatesClick}>
-            <p>Anuradha Goyal</p>
+            <p>
+              Anuradha Goyal <span>Brain specialist</span>
+            </p>
             <AiOutlinePlus className="book-review-plus-icon" />
           </div>
           <div
@@ -180,11 +191,11 @@ const BookDetails = () => {
 
                 <p>
                   Affiliation <br />{" "}
-                  <span>No 1 athor of 2002. by IIT MUMBAI</span>
+                  <span>No 1 author of 2002. by AIIMS Delhi</span>
                 </p>
               </div>
               <div className="reviewer-comment">
-                <p>Commet by reviewer</p>
+                <p>Comment by reviewer</p>
                 <p>
                   A compelling exploration of the world of medicine, this book
                   provides an insightful and informative journey into the
@@ -238,7 +249,9 @@ const BookDetails = () => {
         </div>
         <div className="review">
           <div className="review-name" onClick={handleReviewDatesClick2}>
-            <p>Akhila Saroha</p>
+            <p>
+              Akhila Saroha <span>Heart specialist</span>
+            </p>
             <AiOutlinePlus className="book-review-plus-icon2" />
           </div>
           <div
@@ -264,11 +277,11 @@ const BookDetails = () => {
 
                 <p>
                   Affiliation <br />{" "}
-                  <span>No 1 athor of 2002. by IIT Madras</span>
+                  <span>No 1 author of 2002. by Victoria Bangalore</span>
                 </p>
               </div>
               <div className="reviewer-comment">
-                <p>Commet by reviewer</p>
+                <p>Comment by reviewer</p>
                 <p>
                   Delving deep into the realm of medicine, this book offers
                   invaluable insights into the intricacies of healthcare, making
@@ -320,7 +333,9 @@ const BookDetails = () => {
         </div>
         <div className="review">
           <div className="review-name" onClick={handleReviewDatesClick3}>
-            <p>Vidhya Thakkar</p>
+            <p>
+              Vidhya Thakkar <span>Cancer specialist</span>
+            </p>
             <AiOutlinePlus className="book-review-plus-icon3" />
           </div>
           <div
@@ -346,11 +361,13 @@ const BookDetails = () => {
 
                 <p>
                   Affiliation <br />{" "}
-                  <span>No 1 athor of 2002. by IIT Roorke</span>
+                  <span>
+                    No 1 author of 2002. by Christian Medical College, Vellore
+                  </span>
                 </p>
               </div>
               <div className="reviewer-comment">
-                <p>Commet by reviewer</p>
+                <p>Comment by reviewer</p>
                 <p>
                   Offering a profound exploration of the medical world, this
                   book presents enlightening perspectives on the intricacies of
@@ -402,6 +419,18 @@ const BookDetails = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="review-student">
+        <p className="book-details-heading">
+          Student Review{" "}
+          <span>
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStarHalfAlt />
+          </span>
+        </p>
       </div>
     </div>
   );
