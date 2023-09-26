@@ -264,7 +264,7 @@ a:hover::after {
 }
 
 .nb-icon {
-  color: #056b6b;
+  color: #000;
   display: none;
 }
 .mobile-view {
