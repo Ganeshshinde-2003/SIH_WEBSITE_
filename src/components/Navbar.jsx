@@ -101,8 +101,10 @@ const Navbar = () => {
           Content Analyst
         </Link>
         <Link
-          to="/search"
-          className={location.pathname === "/search" ? "active-link" : ""}
+          to="/translatorsdashboard"
+          className={
+            location.pathname === "/translatorsdashboard" ? "active-link" : ""
+          }
           onClick={showDashBoard}
         >
           Translator
