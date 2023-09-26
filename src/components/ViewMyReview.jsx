@@ -2,12 +2,12 @@ import React from "react";
 import PublisherData from "../Data/PublisherData.json";
 import Image1 from "../assets/book12.jpg";
 import { Link } from "react-router-dom";
-import Sidebar from "./Sidebar";
+import ReviewerSidebar from '../components/ReviewerSidebar';
 
-const ViewMyBooks = () => {
+const ViewMyReview = () => {
   return (
     <div style={{ display: "flex" }}>
-      <Sidebar />
+      <ReviewerSidebar />
       <div className="container my-4 dashboard-table-container">
         <table className="table table-responsive-md table-bordered">
           <thead className="bg-gray-700 text-white text-center">
@@ -65,4 +65,4 @@ const ViewMyBooks = () => {
   );
 };
 
-export default ViewMyBooks;
+export default ViewMyReview;

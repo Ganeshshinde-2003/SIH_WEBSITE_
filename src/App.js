@@ -18,6 +18,9 @@ import { ToastContainer } from "react-toastify";
 import AboutUs from "./pages/AboutUs";
 import Search from "./pages/Search";
 import PdfReview from "./components/PdfReview";
+import ReviewerDashboard from "./pages/ReviewerDashboard";
+import ViewMyReview from "./components/ViewMyReview";
+import SubmitBook from "./components/SubmitBook";
 
 function App() {
   return (
@@ -38,6 +41,11 @@ function App() {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/search" element={<Search />} />
           <Route path="/review-book" element={<PdfReview />} />
+          <Route path="/reviewerdashboard" element={<ReviewerDashboard />} />
+          <Route path="/view-my-reviews" element={<ViewMyReview />} />
+
+
+
         </Routes>
         <Footer />
         <ToastContainer />
