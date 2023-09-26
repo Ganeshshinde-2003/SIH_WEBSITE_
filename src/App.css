@@ -20,7 +20,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.nb-logo {
+  cursor: pointer;
+}
 .nb-contanier {
   position: relative;
   padding: 20px 40px;

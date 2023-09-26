@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../App.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useAuth } from "../components/AuthContext";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const { isLoggedIn } = useAuth();
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -23,9 +24,13 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   };
 
+  const navigation = () => {
+    navigate("/");
+  };
+
   return (
     <div className="nb-contanier">
-      <div className="nb-logo">
+      <div className="nb-logo" onClick={navigation}>
         <img src="https://ayush.gov.in/images/logo/1.jpg" alt="logo" />
       </div>
       <div className="nb-content">
