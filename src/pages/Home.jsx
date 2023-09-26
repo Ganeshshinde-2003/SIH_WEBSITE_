@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../App.css";
+import { Link } from "react-router-dom";
 import Books from "../assets/books.png";
 import BookCard from "../components/BookCard";
 import book1 from "../assets/book1.jpg";
@@ -165,7 +166,7 @@ const Home = () => {
             <ul className="dropdown-menu">
               <li>
                 <button className="dropdown-item" type="button">
-                🟢 Reviewed
+                  🟢 Reviewed
                 </button>
               </li>
               <li>
@@ -175,7 +176,7 @@ const Home = () => {
               </li>
               <li>
                 <button className="dropdown-item" type="button">
-                🔴 Not Reviewed
+                  🔴 Not Reviewed
                 </button>
               </li>
             </ul>
@@ -183,16 +184,22 @@ const Home = () => {
           <div className="total-book">120+ Books</div>
         </div>
         <div className="book-collection">
-        {listOne.slice(0, numBooksToShow).map((book, index) => (
-          <BookCard key={index} img={book.img} name={book.name} disc={book.disc} />
-        ))}
-      </div>
-      {numBooksToShow < listOne.length && (
-        <div className="load-more-button">
-          <a className="load-more-link" onClick={loadMoreBooks}>Load More...</a>
+          {listOne.slice(0, numBooksToShow).map((book, index) => (
+            <BookCard
+              key={index}
+              img={book.img}
+              name={book.name}
+              disc={book.disc}
+            />
+          ))}
         </div>
-      )}
-
+        {numBooksToShow < listOne.length && (
+          <div className="load-more-button">
+            <Link className="load-more-link" onClick={loadMoreBooks}>
+              Load More...
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );
