@@ -16,12 +16,11 @@ const Navbar = () => {
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
-    showDashBoard();
   };
 
   const showDashBoard = () => {
     setDashboard(!dashboard);
-    toggleMobileMenu();
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -83,21 +82,21 @@ const Navbar = () => {
           className={
             location.pathname === "/publisherdashboard" ? "active-link" : ""
           }
-          onClick={closeMobileMenu}
+          onClick={showDashBoard}
         >
           Publisher
         </Link>
         <Link
           to="/search"
           className={location.pathname === "/search" ? "active-link" : ""}
-          onClick={closeMobileMenu}
+          onClick={showDashBoard}
         >
           Content Analyst
         </Link>
         <Link
           to="/search"
           className={location.pathname === "/search" ? "active-link" : ""}
-          onClick={closeMobileMenu}
+          onClick={showDashBoard}
         >
           Transilator
         </Link>
