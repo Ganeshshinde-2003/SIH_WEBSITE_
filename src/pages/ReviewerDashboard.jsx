@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from '../components/Sidebar';
+import ReviewerSidebar from '../components/ReviewerSidebar';
 import Card from '../components/DashboardOverviewCrads';
 import { FaFileUpload }  from 'react-icons/fa' ;
 import { GrInProgress } from 'react-icons/gr' ;
@@ -7,33 +7,33 @@ import { BsFillBookmarkCheckFill } from 'react-icons/bs' ;
 import { MdSmsFailed } from 'react-icons/md' ;
 import Table from '../components/PublisherTable';
 
-const PublisherDashboard = ()=> {
+const ReviewerDashboard = ()=> {
   return (
     <div style={{display:'flex'}}>
-      <Sidebar />
+      <ReviewerSidebar />
       <div>
       <div className="publisher-cards-container">
       <Card
         icon= {<FaFileUpload />}
-        title="Total books Uploaded"
-        content="20"
+        title="Total books Reviewed"
+        content="8"
       />
       <Card
         icon={<GrInProgress />}
         title="Currently in Review"
-        content="3"
+        content="2"
         contentColor="#FFBF00"
       />
       <Card
         icon={<BsFillBookmarkCheckFill />}
         title="Reviewed successfully"
-        content="14"
+        content="4"
         contentColor="green"
       />
       <Card
         icon={< MdSmsFailed />}
         title="Rejected"
-        content="3"
+        content="2"
         contentColor="red"
       />
       </div>
@@ -44,4 +44,4 @@ const PublisherDashboard = ()=> {
   );
 }
 
-export default PublisherDashboard;
+export default ReviewerDashboard;

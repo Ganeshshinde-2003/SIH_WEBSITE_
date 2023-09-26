@@ -3,7 +3,7 @@
       "id": 1,
       "SubmissionID": "SUB-1456351",
       "BookTitle": "Gray's Anatomy",
-      "Author": "DM. Vasudevan Nair",
+      "Author": "DM. Vasudevan ",
       "Tags": "Siddha",
       "coverImage":"book1.jpg",
       "ExpectedReviewDate": "2023-09-30",
@@ -14,7 +14,7 @@
     },
     {
       "id": 2,
-      "SubmissionID": "SUB-670902",
+      "SubmissionID": "SUB-850902",
       "BookTitle": "Guyton & Hall Textbook",
       "Author": "Vaz ",
       "Tags": "Unani",
@@ -35,7 +35,7 @@
         "ExpectedReviewDate": "2023-10-05",
         "Actions": "Action 2",
         "ReviewStatus": "🟢 Approved",
-        "ReviewRating": 4.5,
+        "ReviewRating": 3,
         "Comments": "Great work!"
       },
       {
@@ -49,8 +49,21 @@
         "Actions": "Action 2",
         "ReviewStatus": "🔴 Rejecterd",
         "ReviewRating": 4.5,
-        "Comments": "Great work!"
-      } 
+        "Comments": " work Hard!"
+      } ,
+      {
+        "id": 5,
+        "SubmissionID": "SUB-9456351",
+        "BookTitle": " Anatomy",
+        "Author": "Vasudevan Nair",
+        "Tags": "Siddha",
+        "coverImage":"book1.jpg",
+        "ExpectedReviewDate": "2023-09-30",
+        "Actions": "Action 1",
+        "ReviewStatus": "🟡 In-Review",
+        "ReviewRating": 4.2,
+        "Comments": "No comments yet"
+      }
 
   ]
   
