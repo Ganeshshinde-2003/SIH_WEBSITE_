@@ -516,8 +516,6 @@ a:not(.card-link):hover::after {
 
 .book-details-card {
   margin-bottom: 40px;
-  margin-left: 10px;
-  margin-right: 10px;
   background-color: #107373;
   height: 85vh;
   display: flex;
