@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom"; // Import useHistory
 import "../../App.css";
 import { useAuth } from "../../components/AuthContext";
+import { toast } from "react-toastify";
 
 function RegisterForm() {
   const [name, setName] = useState("");
@@ -9,10 +10,11 @@ function RegisterForm() {
   const [password, setPassword] = useState("");
   const [role, setRole] = useState("");
   const { login } = useAuth();
-  const navigate = useNavigate(); // Initialize useHistory
+  const navigate = useNavigate(); 
 
   const handleLogin = () => {
     login();
+    toast.success("Register Successful");
     navigate("/");
   };
 
@@ -55,6 +57,8 @@ function RegisterForm() {
             <option value="student">Student</option>
             <option value="publisher">Publisher</option>
             <option value="reviewer">Content Anaylist</option>
+            <option value="reviewer">Translater</option>
+
           </select>
           <button
             className="registration-button"

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom"; // Import useHistory
 import "../../App.css";
 import { useAuth } from "../../components/AuthContext";
+import { toast } from "react-toastify";
 
 function LoginForm() {
   const [email, setEmail] = useState("");
@@ -11,6 +12,7 @@ function LoginForm() {
 
   const handleLogin = () => {
     login();
+    toast.success("Login Successful");
     navigate("/"); // Redirect to the home page
   };
 

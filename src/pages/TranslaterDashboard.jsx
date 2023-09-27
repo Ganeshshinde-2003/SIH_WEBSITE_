@@ -14,11 +14,6 @@ const TranslaterDashboard = ()=> {
       <div>
       <div className="publisher-cards-container">
       <Card
-        icon= {<FaFileUpload />}
-        title="Total books Translated"
-        content="10"
-      />
-      <Card
         icon={<GrInProgress />}
         title="Currently in Translation"
         content="4"
@@ -35,6 +30,11 @@ const TranslaterDashboard = ()=> {
         title="Rejected"
         content="1"
         contentColor="red"
+      />
+      <Card
+        icon= {<FaFileUpload />}
+        title="Total books Translated"
+        content="10"
       />
       </div>
       <Table />

@@ -14,10 +14,17 @@ const ReviewerDashboard = ()=> {
       <div>
       <div className="publisher-cards-container">
       <Card
-        icon= {<FaFileUpload />}
-        title="Total books Reviewed"
-        content="8"
+        icon={<BsFillBookmarkCheckFill />}
+        title="Reviewed successfully"
+        content="4"
+        contentColor="green"
       />
+      <Card
+      icon={< MdSmsFailed />}
+      title="Rejected"
+      content="2"
+      contentColor="red"
+    />
       <Card
         icon={<GrInProgress />}
         title="Currently in Review"
@@ -25,17 +32,10 @@ const ReviewerDashboard = ()=> {
         contentColor="#FFBF00"
       />
       <Card
-        icon={<BsFillBookmarkCheckFill />}
-        title="Reviewed successfully"
-        content="4"
-        contentColor="green"
-      />
-      <Card
-        icon={< MdSmsFailed />}
-        title="Rejected"
-        content="2"
-        contentColor="red"
-      />
+      icon= {<FaFileUpload />}
+      title="Total books Reviewed"
+      content="8"
+    />
       </div>
       <Table />
       </div>

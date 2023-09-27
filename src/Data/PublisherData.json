@@ -5,7 +5,7 @@
       "BookTitle": "Gray's Anatomy",
       "Author": "DM. Vasudevan ",
       "Tags": "Siddha",
-      "coverImage":"book1.jpg",
+      "coverImage":1,
       "ExpectedReviewDate": "2023-09-30",
       "Actions": "Action 1",
       "ReviewStatus": "🟡 In-Review",
