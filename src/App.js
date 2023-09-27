@@ -14,6 +14,7 @@ import BookUploadForm from "./components/BookUploadForm";
 import NotificationPage from "./components/Notification";
 import ViewMyBooks from "./components/ViewMyBooks";
 import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import AboutUs from "./pages/AboutUs";
 import Search from "./pages/Search";
 import PdfReview from "./components/PdfReview";
@@ -49,11 +50,13 @@ function App() {
           <Route path="/my-translations" element={<ViewMyTranslation />} />
           <Route path="/translation-book" element={<PdfReview />} />
 
-        </Routes>
-        <Footer />
-        <ToastContainer />
-      </BrowserRouter>
-    </AuthProvider>
+          
+          </Routes>
+          
+          <Footer />
+          </BrowserRouter>
+          <ToastContainer position="top-right" />
+          </AuthProvider>
   );
 }
 
